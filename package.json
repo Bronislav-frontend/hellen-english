@@ -3,10 +3,12 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://Viktor-Kostiuchenko.github.io/hellen-english",
+  "homepage": "https://Bronislav-frontend.github.io/hellen-english",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /hellen-english/"
+    "build": "parcel build src/*.html --public-url /hellen-english/",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -27,6 +29,7 @@
   },
   "dependencies": {
     "animate.css": "^4.1.1",
+    "gh-pages": "^4.0.0",
     "jquery": "^3.6.0"
   }
 }
